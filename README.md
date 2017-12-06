@@ -1,1 +1,1 @@
-# Strona-internetowa-kina
+Był to mój pierwszy (i w tej chwili jedyny) projekt związany z tworzeniem stron internetowych. Przy jego tworzeniu dopiero się uczyłem HTML, CSS, oraz JS, więc do użytku raczej się nie nadaje. Nawet działa jak tego chciałem tylko na moim laptopie. Więc do każdej części kodu dołaczam screenshota tego jak to miało wygladać.
