@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style>
+			.button { background-color: #4d4d4d; border: none; font-size: 13px; color: DarkGrey; padding: 5px 65px; text-align: center;
+					  transition-duration: 0.4s; text-decoration: none; overflow: hidden; cursor: pointer; outline: none;
+			}
+			input::-webkit-input-placeholder       {text-indent: 0px; text-align: center; transition: text-indent 0.7s ease;}
+			input::-moz-placeholder                {text-indent: 0px; text-align: center; transition: text-indent 0.7s ease;}
+			input:-moz-placeholder                 {text-indent: 0px; text-align: center; transition: text-indent 0.7s ease;}
+			input:-ms-input-placeholder            {text-indent: 0px; text-align: center; transition: text-indent 0.7s ease;}
+			input:focus::-webkit-input-placeholder {text-indent: 500px; text-align: center; transition: text-indent 0.7s ease;}
+			input:focus::-moz-placeholder          {text-indent: 500px; text-align: center; transition: text-indent 0.7s ease;}
+			input:focus:-moz-placeholder           {text-indent: 500px; text-align: center; transition: text-indent 0.7s ease;}
+			input:focus:-ms-input-placeholder      {text-indent: 500px; text-align: center; transition: text-indent 0.7s ease;}
+			.specbut:hover:enabled { color: LavenderBlush ; background-color: #44a08c }
+			.specbut:active { color: DarkGrey ;background-color: #53723F; transform: translateY(4px); }
+			input[type=NN] { width: 20%; height: 7%; font-family: Verdana; font-size: 12pt; text-align: center; 
+							 border: 2px #99ccff; border-radius: 4px; background-color: #4d4d4d;color: #b5f0ed; outline: none;}
+			textarea {
+				background-color:#4d4d4d;color: #b5f0ed; font-family: Verdana; font-size: 12pt; border: 2px #99ccff; border-radius: 4px;
+				position: absolute; margin-left: 70%; margin-top: 8%; outline: none; resize: none;
+				width: 25%; height: 58%;
+			}
+		</style>
+	</head>
+	<body>
+		<body style = "background-color: #BDBSAD; background: url(nfs11.png); no-repeat;">
+		<a href="http://facebook.com"><img src = "CinUN.png" alt="Repertuar" style="position: absolute; left: 41.9%; bottom: 90.4%"
+										onMouseOver="this.src='CinN.png'" onMouseOut="this.src='CinUN.png'"></a>
+		<a href="http://facebook.com" style="position: absolute; left: 4.8%; top: 4.5%; text-decoration: none; font-family: Impact Regular; color: #b5f0ed;">
+			Aliaksandr Pachkouski</a>
+		<a href="http://facebook.com"><img src = "exit.png" alt="Wyloguj" style="position: absolute; left: 17%; top: 5.1%"></a>
+		
+		<form action="mailto:yura.mars.91@gmail.com" name="Edit" enctype="text/plain" id="E1">
+					<input type="NN" style="position: absolute; margin-left: 8%; margin-top: 8%;"  name="Nazwa" placeholder="Nazwa">
+					<input type="NN" style="position: absolute; margin-left: 8%; margin-top: 12%;" name="Produkcja" placeholder="Produkcja">
+					<input type="NN" style="position: absolute; margin-left: 8%; margin-top: 16%;" name="Reżyseria" placeholder="Reżyseria">
+					<input type="NN" style="position: absolute; margin-left: 8%; margin-top: 20%;" name="Gatunek" placeholder="Gatunek">
+					<input type="NN" style="position: absolute; margin-left: 8%; margin-top: 24%;" name="Napisy" placeholder="Napisy">
+					<input type="NN" style="width: 8%; height: 5%; position: absolute; margin-left: 8%; margin-top: 29%;" name="3D" placeholder="3D">
+					<input type="NN" style="width: 8%; height: 5%; position: absolute; margin-left: 20%; margin-top: 29%;" name="Cena" placeholder="Cena">
+					<input type="NN" style="width: 8%; height: 5%; position: absolute; margin-left: 8%; margin-top: 33%;" name="Czas Trwania" placeholder="Czas Trwania">
+					<input type="NN" style="width: 8%; height: 5%; position: absolute; margin-left: 20%; margin-top: 33%;" name="Premiera" placeholder="Premiera">
+					<textarea name = "Opis"></textarea>
+		</form>
+		<button type="submit" form="E1" class="button specbut" style="position: absolute; margin-left: 42%; margin-top: 40%;">Gotowe</button>
+	</body>
+</html>

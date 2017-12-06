@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style>
+			html {
+				background: url(nfs8.png) no-repeat left top, 
+							url(try3.gif) no-repeat left top;
+				background-size: cover;
+			}
+			.dark { position: fixed; z-index: 1; left: 0; top: 0;
+				    width: 100%; height: 100%; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.8);
+			}
+			.button { background-color: #4d4d4d; border: none; font-size: 13px; color: DarkGrey; padding: 5px 32px; text-align: center;
+					  transition-duration: 0.4s; text-decoration: none; overflow: hidden; cursor: pointer; outline: none;
+			}
+			input::-webkit-input-placeholder       {text-indent: 0px; text-align: center; transition: text-indent 0.7s ease;}
+			input::-moz-placeholder                {text-indent: 0px; text-align: center; transition: text-indent 0.7s ease;}
+			input:-moz-placeholder                 {text-indent: 0px; text-align: center; transition: text-indent 0.7s ease;}
+			input:-ms-input-placeholder            {text-indent: 0px; text-align: center; transition: text-indent 0.7s ease;}
+			input:focus::-webkit-input-placeholder {text-indent: 500px; text-align: center; transition: text-indent 0.7s ease;}
+			input:focus::-moz-placeholder          {text-indent: 500px; text-align: center; transition: text-indent 0.7s ease;}
+			input:focus:-moz-placeholder           {text-indent: 500px; text-align: center; transition: text-indent 0.7s ease;}
+			input:focus:-ms-input-placeholder      {text-indent: 500px; text-align: center; transition: text-indent 0.7s ease;}
+			.specbut:hover:enabled { color: LavenderBlush ; background-color: #44a08c }
+			.specbut:active { color: DarkGrey ;background-color: #53723F; transform: translateY(4px); }
+			.dark-photo{ margin-left: 2%; margin-top: 2%; color: DarkGrey; background-color: #393834; position: absolute;}
+			.dark-top { margin-left: 300px; background-color: #454542; color: #b5f0ed; font-family: Impact Regular; font-size: 19pt;}
+			.dark-mid { padding: 2px; color: DarkGrey; font-family: Verdana; font-size: 10pt;}
+			#dark-bottom { top: 200px; left: 1070px; height: 200px; width: 50px; position: absolute; background-color: #31312f; color: DarkGrey; font-family: Verdana; font-size: 10pt; border: 1px solid #888; overflow: auto; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+			#dark-bottom2 { top: 220px; left: 243px; height: 150px; width: 50px; position: absolute; background-color: #31312f; color: DarkGrey; font-family: Verdana; font-size: 10pt; border: 1px solid #888; overflow: auto; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+			#dark-bottom3 { top: 150px; left: 445px; height: 150px; width: 50px; position: absolute; background-color: #31312f; color: DarkGrey; font-family: Verdana; font-size: 10pt; border: 1px solid #888; overflow: auto; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+			a.fill-db {display: block; height: 100%; width: 100%; text-decoration: none;}
+			.dark-window { position: relative; background-color: #454542; margin: auto; padding: 0; border: 1px solid #888; overflow: auto; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+			}
+			input[type=NN] { width: 50%; height: 12%; font-family: Verdana; font-size: 10pt; text-align: center; 
+							 border: 2px #99ccff; border-radius: 4px; background-color: #4d4d4d;color: #b5f0ed; outline: none;}
+			.star { width:4%; height:4%; border-style: none; }
+		</style>
+	</head>
+	<body>
+		<div id="dark-bottom">
+			<a href = "file:///D:\TAMSO\buttons\Welcome\Main\Repertuar.html" class = "fill-db">
+				<div style="padding-left: 30px; padding-top: 21px; font-family: Impact Regular; font-size: 11pt; color: LightCoral;">
+					R<br>E<br>P<br>E<br>R<br>T<br>U<br>A<br>R
+				</div>
+			</a>
+		</div>
+		<div class="dark-window" style="height:415px; width: 810px; top: 94px;">
+			<div class="dark-top" style="height: 25px; text-transform: uppercase"> bol mego dupska 2</div>
+			<div class="dark-mid">
+				<div class="dark-photo" style="height:280px; width: 200px;">
+					<img src="poster.png" alt="Poster">
+				</div>
+			</div>
+			<div style="margin-left: 37%; margin-top: 8%; margin-right: 5%; color: DarkGrey; font-family: Verdana; font-size: 10pt;">
+				Premiera: 2017-01-01<br>
+				Produkcja: USA 2017<br>
+				Reżyseria: Moje Życie <br>
+				Obsada: Ja, dupsko <br>
+				Czas: 02:30:00<br>
+				Napisy: PL<br>
+				3D<br><br><br>
+				Dawno Dawno temu bolalo, teraz tez boli, ale troche mniej. W glownych rolach: Sasha, jego dupsko.
+				<div id = "stars" style = "position: absolute; top: 50px;">
+					<a href="http://facebook.com"><img id = 's1' src ="0.png" class = "star" alt="0" onMouseOver="this.src ='1.png'" onMouseOut="this.src ='0.png'"></a>
+					<a href="http://facebook.com"><img id = 's2' src ="0.png" class = "star" alt="0"
+						onMouseOver="this.src ='2.png'; document.getElementById('s1').src = '1.png'" 
+						onMouseOut="this.src ='0.png'; document.getElementById('s1').src = '0.png'"></a>
+					<a href="http://facebook.com"><img id = 's3' src ="0.png" class = "star" alt="0" 
+						onMouseOver="this.src ='3.png'; document.getElementById('s1').src = '1.png'; document.getElementById('s2').src = '2.png'" 
+						onMouseOut="this.src ='0.png'; document.getElementById('s1').src = '0.png'; document.getElementById('s2').src = '0.png'"></a>
+					<a href="http://facebook.com"><img id = 's4' src ="0.png" class = "star" alt="0" 
+						onMouseOver="this.src ='4.png'; document.getElementById('s1').src = '1.png'; document.getElementById('s2').src = '2.png'; document.getElementById('s3').src = '3.png'" 
+						onMouseOut="this.src ='0.png'; document.getElementById('s1').src = '0.png'; document.getElementById('s2').src = '0.png'; document.getElementById('s3').src = '0.png'"></a>
+					<a href="http://facebook.com" >
+						<img src ="0.png" class = "star" alt="0" 
+						onMouseOver="this.src ='5.png'; document.getElementById('s1').src = '1.png'; document.getElementById('s2').src = '2.png'
+									document.getElementById('s3').src = '3.png'; document.getElementById('s4').src = '4.png'" 
+						onMouseOut="this.src ='0.png'; document.getElementById('s1').src = '0.png'; document.getElementById('s2').src = '0.png'
+									document.getElementById('s3').src = '0.png'; document.getElementById('s4').src = '0.png'">
+					</a>
+				</div>
+			</div>
+			<div style="margin-left: 10%; margin-top: 9%; margin-right: 5%; color: #b5f0ed; font-family: Impact Regular; font-size: 13pt; position: absolute;"> 
+				OCENA 85 <br>
+			</div>
+			<div style="margin-left: 10%; margin-top: 13%; margin-right: 5%; color: DarkGrey; font-family: Impact Regular; font-size: 11pt; position: absolute;"> 
+				GLOSY 2121
+			</div>
+			<button type="submit" class="button specbut" style="position: absolute; left:75%; bottom: 10%">Kup bilet</button>
+		</div>
+		<div class="dark">
+			<div id="dark-bottom3">
+				<a href = "file:///D:\TAMSO\buttons\Welcome\Main\Film.html" class = "fill-db">
+					<div style="padding-left: 10px; padding-top: 21px; font-family: Impact Regular; font-size: 11pt; color: LightCoral;">
+						P<br>O<br>W<br>R<br>Ó<br>T
+					</div>
+				</a>
+			</div>
+			<div class="dark-window" style="height:215px; width: 410px; top: 120px;">
+				<form action="mailto:yura.mars.91@gmail.com" name="Gosc" enctype="text/plain" id="G1">
+					<input type="NN" style="position: absolute; margin-left: 24%; margin-top: 9%;" maxlength="25" name="Email" placeholder="Email">
+					<input type="NN" style="position: absolute; margin-left: 24%; margin-top: 17%;" maxlength="25" name="Imię" placeholder="Imię">
+					<input type="NN" style="position: absolute; margin-left: 24%; margin-top: 25%;" maxlength="25" name="Nazwisko" placeholder="Nazwisko">
+				</form>
+				<button type="submit" form="G1" class="button specbut" style="position: absolute; margin-left: 38%; margin-top: 40%;">Kup</button>
+			</div>
+		</div>
+	</body>
+</html>
